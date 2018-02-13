@@ -53,7 +53,7 @@ body {
 }
 
 #banner-img-div {
-	background: transparent url(img/personal-usc-logo.svg) center center no-repeat;
+	background: transparent url(img/personal-usc-logo.svg) 250px 10px no-repeat;
 }
 
 h1 {
