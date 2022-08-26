@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://superyou.github.io/sitemap.xml
