@@ -78,10 +78,10 @@
   
     
   
-  <meta name="description" content="An example talk using Wowchemy&#39;s Markdown slides feature." />
+  <meta name="description" content="Resistive random access memory (ReRAM) has been proven capable to efficiently perform in-situ matrix-vector computations in convolutional neural network (CNN) processing. The computations are often conducted on multi-level cell (MLC) that have limited precision and hence, show significant vulnerability to noises. The binarized neural network (BNN) is a hardware-friendly model that can dramatically reduce the computation and storage overheads. However, XNOR, which is the key operation in BNNs, cannot be directly computed in-situ in ReRAM because of its nonlinear behavior. To enable real in-situ processing of BNNs in ReRAM, we modified the BNN algorithm to enable direct computation of XNOR, POPCOUNT and POOL based on ReRAM cells. We also proposed the complementary resistive cell (CRC) design to efficiently conduct XNOR operations and optimized the pipeline design with decoupled buffer and computation stages. Our results show our scheme, namely, ReBNN, improves the system performance by 25.36 × and the energy efficiency by 4.26 × compared to conventional ReRAM based accelerator, and ensures a throughput higher than state-of-the-art BNN accelerators. The correctness of the modified algorithm is also validated" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://superyou.github.io/talk/example-talk/" />
+  <link rel="alternate" hreflang="en-us" href="https://superyou.github.io/publication/rebnn/" />
 
   
   
@@ -283,7 +283,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://superyou.github.io/talk/example-talk/" />
+  <link rel="canonical" href="https://superyou.github.io/publication/rebnn/" />
 
   
   
@@ -294,6 +294,7 @@
   
   
     
+    
   
   
 
@@ -302,32 +303,35 @@
     
     
   
-  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:card" content="summary" />
   
     <meta property="twitter:site" content="@wowchemy" />
     <meta property="twitter:creator" content="@wowchemy" />
   
   <meta property="og:site_name" content="You Wu" />
-  <meta property="og:url" content="https://superyou.github.io/talk/example-talk/" />
-  <meta property="og:title" content="Example Talk | You Wu" />
-  <meta property="og:description" content="An example talk using Wowchemy&#39;s Markdown slides feature." /><meta property="og:image" content="https://superyou.github.io/talk/example-talk/featured.jpg" />
-    <meta property="twitter:image" content="https://superyou.github.io/talk/example-talk/featured.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="https://superyou.github.io/publication/rebnn/" />
+  <meta property="og:title" content="REBNN: in-situ acceleration of binarized neural networks in ReRAM using complementary resistive cell | You Wu" />
+  <meta property="og:description" content="Resistive random access memory (ReRAM) has been proven capable to efficiently perform in-situ matrix-vector computations in convolutional neural network (CNN) processing. The computations are often conducted on multi-level cell (MLC) that have limited precision and hence, show significant vulnerability to noises. The binarized neural network (BNN) is a hardware-friendly model that can dramatically reduce the computation and storage overheads. However, XNOR, which is the key operation in BNNs, cannot be directly computed in-situ in ReRAM because of its nonlinear behavior. To enable real in-situ processing of BNNs in ReRAM, we modified the BNN algorithm to enable direct computation of XNOR, POPCOUNT and POOL based on ReRAM cells. We also proposed the complementary resistive cell (CRC) design to efficiently conduct XNOR operations and optimized the pipeline design with decoupled buffer and computation stages. Our results show our scheme, namely, ReBNN, improves the system performance by 25.36 × and the energy efficiency by 4.26 × compared to conventional ReRAM based accelerator, and ensures a throughput higher than state-of-the-art BNN accelerators. The correctness of the modified algorithm is also validated" /><meta property="og:image" content="https://superyou.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://superyou.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2017-01-01T00:00:00&#43;00:00"
+        content="2022-08-26T15:03:23-07:00"
       />
     
-    <meta property="article:modified_time" content="2030-06-01T13:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2019-10-23T15:03:23-07:00">
   
 
   
 
 
-
-  
     
+
+
+
+
+
 
 
 
@@ -335,43 +339,30 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Event",
+  "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://superyou.github.io/talk/example-talk/"
+    "@id": "https://superyou.github.io/publication/rebnn/"
   },
-  "name": "Example Talk",
+  "headline": "REBNN: in-situ acceleration of binarized neural networks in ReRAM using complementary resistive cell",
   
-  "location": {
-    "@type": "Place",
-    "name": "Wowchemy HQ",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "450 Serra Mall",
-      "addressLocality": "Stanford",
-      "postalCode": "94305",
-      "addressRegion": "CA",
-      "addressCountry": "United States"
-    }
-    
-  },
+  "datePublished": "2022-08-26T15:03:23-07:00",
+  "dateModified": "2019-10-23T15:03:23-07:00",
   
-  
-  "image": [
-    "https://superyou.github.io/talk/example-talk/featured.jpg"
-  ],
-  
-  "startDate": "2030-06-01T13:00:00Z",
-  
-  "endDate": "2030-06-01T15:00:00Z",
-  
-  
-  "performer": {
+  "author": {
     "@type": "Person",
-    "name": "You Wu"
+    "name": "Linghao Song"
   },
   
-  "description": "An example talk using Wowchemy's Markdown slides feature."
+  "publisher": {
+    "@type": "Organization",
+    "name": "You Wu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://superyou.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Resistive random access memory (ReRAM) has been proven capable to efficiently perform in-situ matrix-vector computations in convolutional neural network (CNN) processing. The computations are often conducted on multi-level cell (MLC) that have limited precision and hence, show significant vulnerability to noises. The binarized neural network (BNN) is a hardware-friendly model that can dramatically reduce the computation and storage overheads. However, XNOR, which is the key operation in BNNs, cannot be directly computed in-situ in ReRAM because of its nonlinear behavior. To enable real in-situ processing of BNNs in ReRAM, we modified the BNN algorithm to enable direct computation of XNOR, POPCOUNT and POOL based on ReRAM cells. We also proposed the complementary resistive cell (CRC) design to efficiently conduct XNOR operations and optimized the pipeline design with decoupled buffer and computation stages. Our results show our scheme, namely, ReBNN, improves the system performance by 25.36 × and the energy efficiency by 4.26 × compared to conventional ReRAM based accelerator, and ensures a throughput higher than state-of-the-art BNN accelerators. The correctness of the modified algorithm is also validated"
 }
 </script>
 
@@ -379,8 +370,10 @@
 
   
 
+  
 
-  <title>Example Talk | You Wu</title>
+
+  <title>REBNN: in-situ acceleration of binarized neural networks in ReRAM using complementary resistive cell | You Wu</title>
 
   
   
@@ -400,7 +393,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a8edef490afe42206247b6ac05657af0" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="02ffad421d13d363332c7fb3980a089f" >
 
   
   
@@ -736,7 +729,16 @@
     
     
 
-    <div class="pub">
+    
+
+
+
+
+
+
+
+
+<div class="pub">
 
   
 
@@ -751,32 +753,47 @@
 
 
 
-
-
-
-
-
-
-
-
+  
 
   
   
-
-
+  
 <div class="article-container pt-3">
-  <h1>Example Talk</h1>
+  <h1>REBNN: in-situ acceleration of binarized neural networks in ReRAM using complementary resistive cell</h1>
 
   
 
   
+    
 
 
 <div class="article-metadata">
 
   
   
+  
+  
+  <div>
+    
 
+  <span >
+      Linghao Song</span>, <span class="author-highlighted">
+      You Wu</span>, <span >
+      Xuehai Qian</span>, <span >
+      Hai Li</span>, <span >
+      Yiran Chen</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    October, 2019
+  </span>
   
 
   
@@ -793,7 +810,7 @@
 
 </div>
 
-  
+    
 
 
 
@@ -810,60 +827,44 @@
 
 
   
-
-
-
-
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header" href="/project/example/">
-    Project
-  </a>
-  
-
-
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header" href="/slides/example/" target="_blank">
-    Slides
-  </a>
-  
-
-
-
-
-
-  
-  
-  
     
   
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="https://twitter.com/georgecushen" target="_blank" rel="noopener">
-    <i class="fab fa-twitter mr-1"></i>Follow</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://link.springer.com/content/pdf/10.1007/s42514-019-00014-8.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
+        data-filename="/publication/rebnn/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/https://doi.org/10.1007/s42514-019-00014-8" target="_blank" rel="noopener">
+  DOI
+</a>
+
 
 
 </div>
 
 
-</div>
-
-
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 514px;">
-  <div style="position: relative">
-    <img src="/talk/example-talk/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_620088_720x2500_fit_q75_h2_lanczos.webp" width="720" height="514" alt="" class="featured-image">
-    <span class="article-header-caption">Image credit: <a href="https://unsplash.com/photos/bzdhc5b3Bxs" target="_blank" rel="noopener"><strong>Unsplash</strong></a></span>
-  </div>
+  
 </div>
 
 
@@ -871,33 +872,20 @@
   <div class="article-container">
 
     
-      <h3>Abstract</h3>
-      <p class="pub-abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam.</p>
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Resistive random access memory (ReRAM) has been proven capable to efficiently perform in-situ matrix-vector computations in convolutional neural network (CNN) processing. The computations are often conducted on multi-level cell (MLC) that have limited precision and hence, show significant vulnerability to noises. The binarized neural network (BNN) is a hardware-friendly model that can dramatically reduce the computation and storage overheads. However, XNOR, which is the key operation in BNNs, cannot be directly computed in-situ in ReRAM because of its nonlinear behavior. To enable real in-situ processing of BNNs in ReRAM, we modified the BNN algorithm to enable direct computation of XNOR, POPCOUNT and POOL based on ReRAM cells. We also proposed the complementary resistive cell (CRC) design to efficiently conduct XNOR operations and optimized the pipeline design with decoupled buffer and computation stages. Our results show our scheme, namely, ReBNN, improves the system performance by 25.36 × and the energy efficiency by 4.26 × compared to conventional ReRAM based accelerator, and ensures a throughput higher than state-of-the-art BNN accelerators. The correctness of the modified algorithm is also validated</p>
     
 
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Date</div>
-          <div class="col-12 col-md-9">
-            Jun 1, 2030 1:00 PM &mdash; 3:00 PM
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-
+    
     
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Event</div>
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            <a href="https://example.org" target="_blank" rel="noopener">
-            Wowchemy Conference
+            <a href="/publication/#2">
+              Journal article
             </a>
           </div>
         </div>
@@ -912,12 +900,8 @@
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Location</div>
-          <div class="col-12 col-md-9">Wowchemy HQ</div>
-          
-            <div class="col-md-3"></div>
-            <div class="col-12 col-md-9">450 Serra Mall, Stanford, CA 94305</div>
-          
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9"><em>CCF Transactions on High Performance Computing 1, pages196–208 (2019)</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -927,21 +911,7 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style">
-      <div class="alert alert-note">
-  <div>
-    Click on the <strong>Slides</strong> button above to view the built-in slides feature.
-  </div>
-</div>
-<p>Slides can be added in a few ways:</p>
-<ul>
-<li><strong>Create</strong> slides using Wowchemy&rsquo;s <a href="https://wowchemy.com/docs/managing-content/#create-slides" target="_blank" rel="noopener"><em>Slides</em></a> feature and link using <code>slides</code> parameter in the front matter of the talk file</li>
-<li><strong>Upload</strong> an existing slide deck to <code>static/</code> and link using <code>url_slides</code> parameter in the front matter of the talk file</li>
-<li><strong>Embed</strong> your slides (e.g. Google Slides) or presentation video on this page using <a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">shortcodes</a>.</li>
-</ul>
-<p>Further event details, including <a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements</a> such as image galleries, can be added to the body of this page.</p>
-
-    </div>
+    <div class="article-style"></div>
 
     
 
@@ -962,7 +932,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://superyou.github.io/talk/example-talk/&amp;text=Example%20Talk" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://superyou.github.io/publication/rebnn/&amp;text=REBNN:%20in-situ%20acceleration%20of%20binarized%20neural%20networks%20in%20ReRAM%20using%20complementary%20resistive%20cell" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -975,7 +945,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://superyou.github.io/talk/example-talk/&amp;t=Example%20Talk" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://superyou.github.io/publication/rebnn/&amp;t=REBNN:%20in-situ%20acceleration%20of%20binarized%20neural%20networks%20in%20ReRAM%20using%20complementary%20resistive%20cell" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -988,7 +958,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Example%20Talk&amp;body=https://superyou.github.io/talk/example-talk/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=REBNN:%20in-situ%20acceleration%20of%20binarized%20neural%20networks%20in%20ReRAM%20using%20complementary%20resistive%20cell&amp;body=https://superyou.github.io/publication/rebnn/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1001,7 +971,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://superyou.github.io/talk/example-talk/&amp;title=Example%20Talk" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https://superyou.github.io/publication/rebnn/&amp;title=REBNN:%20in-situ%20acceleration%20of%20binarized%20neural%20networks%20in%20ReRAM%20using%20complementary%20resistive%20cell" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1014,7 +984,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Example%20Talk%20https://superyou.github.io/talk/example-talk/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=REBNN:%20in-situ%20acceleration%20of%20binarized%20neural%20networks%20in%20ReRAM%20using%20complementary%20resistive%20cell%20https://superyou.github.io/publication/rebnn/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1027,7 +997,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://superyou.github.io/talk/example-talk/&amp;title=Example%20Talk" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://superyou.github.io/publication/rebnn/&amp;title=REBNN:%20in-situ%20acceleration%20of%20binarized%20neural%20networks%20in%20ReRAM%20using%20complementary%20resistive%20cell" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1047,6 +1017,13 @@
 
   
   
+    
+
+
+
+
+  
+    
 
 
 
@@ -1175,6 +1152,25 @@
   </div>
 
 
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
 
 
 

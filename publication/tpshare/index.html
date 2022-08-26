@@ -78,10 +78,10 @@
   
     
   
-  <meta name="description" content="An example talk using Wowchemy&#39;s Markdown slides feature." />
+  <meta name="description" content="Current shared cloud operating systems (cloud OS) such as Mesos and YARN are based on the “de facto” two-horizontal-layer cloud platform architecture, which decouples cloud application frameworks (e.g., Apache Spark) from the underlying resource management infrastructure. Each layer normally has its own task or resource allocation scheduler, based on either time-sharing or space- sharing. As such, the schedulers in different layers are unavoidably disconnected, - not aware of each other, which highly likely leads to resource (e.g.,CPU) wastes. Moreover, the tail latency may even be harmed due to the performance interference on shared resources. This paper takes the first step to establish the critical missing connection between the horizontal layers. We propose TPShare, a time- space sharing scheduling abstraction, using a simple but efficient vertical label mechanism to coordinate the time- or space-sharing schedulers in different layers. The vertical labels are bidirectional (i.e., up and down) message carriers which convey necessary information across two layers and are kept as small as possible. The schedulers in different layers can thus take actions according to the label messages to reduce resource wastes and improve tail latency. Moreover, the labels can be defined to support different cloud application frameworks. We implement the label mechanism in Mesos and two popular cloud application frameworks (Apache Spark and Flink) to study the effectiveness of the time-space sharing scheduling abstraction. The label messages of TPShare reduce resource waste and performance interference due to independent time-sharing or space- sharing scheduling of different layers by enabling 1) on-demand fine-grained resource offering, 2) load-aware resource filtering, and 3) resource demand scaling with global view, eventually improving performance and tail latency. We co-locate 13 Spark batch and 4 Flink latency-sensitive programs on a 8-node cluster managed by TPShare to evaluate the speedup, CPU and memory utilization, and tail latency. The results show that TPShare accelerates the Spark programs significantly with even lower CPU and memory utilization compared to Mesos. With higher resource utilization, the throughput of TPShare is drastically larger than that of Mesos. For the Flink programs, TPShare improves the 99th tail latency by 48% on average and up to 120%." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://superyou.github.io/talk/example-talk/" />
+  <link rel="alternate" hreflang="en-us" href="https://superyou.github.io/publication/tpshare/" />
 
   
   
@@ -283,7 +283,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://superyou.github.io/talk/example-talk/" />
+  <link rel="canonical" href="https://superyou.github.io/publication/tpshare/" />
 
   
   
@@ -294,6 +294,7 @@
   
   
     
+    
   
   
 
@@ -302,32 +303,35 @@
     
     
   
-  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:card" content="summary" />
   
     <meta property="twitter:site" content="@wowchemy" />
     <meta property="twitter:creator" content="@wowchemy" />
   
   <meta property="og:site_name" content="You Wu" />
-  <meta property="og:url" content="https://superyou.github.io/talk/example-talk/" />
-  <meta property="og:title" content="Example Talk | You Wu" />
-  <meta property="og:description" content="An example talk using Wowchemy&#39;s Markdown slides feature." /><meta property="og:image" content="https://superyou.github.io/talk/example-talk/featured.jpg" />
-    <meta property="twitter:image" content="https://superyou.github.io/talk/example-talk/featured.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="https://superyou.github.io/publication/tpshare/" />
+  <meta property="og:title" content="Tpshare: a time-space sharing scheduling abstraction for shared cloud via vertical labels | You Wu" />
+  <meta property="og:description" content="Current shared cloud operating systems (cloud OS) such as Mesos and YARN are based on the “de facto” two-horizontal-layer cloud platform architecture, which decouples cloud application frameworks (e.g., Apache Spark) from the underlying resource management infrastructure. Each layer normally has its own task or resource allocation scheduler, based on either time-sharing or space- sharing. As such, the schedulers in different layers are unavoidably disconnected, - not aware of each other, which highly likely leads to resource (e.g.,CPU) wastes. Moreover, the tail latency may even be harmed due to the performance interference on shared resources. This paper takes the first step to establish the critical missing connection between the horizontal layers. We propose TPShare, a time- space sharing scheduling abstraction, using a simple but efficient vertical label mechanism to coordinate the time- or space-sharing schedulers in different layers. The vertical labels are bidirectional (i.e., up and down) message carriers which convey necessary information across two layers and are kept as small as possible. The schedulers in different layers can thus take actions according to the label messages to reduce resource wastes and improve tail latency. Moreover, the labels can be defined to support different cloud application frameworks. We implement the label mechanism in Mesos and two popular cloud application frameworks (Apache Spark and Flink) to study the effectiveness of the time-space sharing scheduling abstraction. The label messages of TPShare reduce resource waste and performance interference due to independent time-sharing or space- sharing scheduling of different layers by enabling 1) on-demand fine-grained resource offering, 2) load-aware resource filtering, and 3) resource demand scaling with global view, eventually improving performance and tail latency. We co-locate 13 Spark batch and 4 Flink latency-sensitive programs on a 8-node cluster managed by TPShare to evaluate the speedup, CPU and memory utilization, and tail latency. The results show that TPShare accelerates the Spark programs significantly with even lower CPU and memory utilization compared to Mesos. With higher resource utilization, the throughput of TPShare is drastically larger than that of Mesos. For the Flink programs, TPShare improves the 99th tail latency by 48% on average and up to 120%." /><meta property="og:image" content="https://superyou.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://superyou.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2017-01-01T00:00:00&#43;00:00"
+        content="2022-08-26T14:49:46-07:00"
       />
     
-    <meta property="article:modified_time" content="2030-06-01T13:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2019-06-22T00:00:00&#43;00:00">
   
 
   
 
 
-
-  
     
+
+
+
+
+
 
 
 
@@ -335,43 +339,30 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Event",
+  "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://superyou.github.io/talk/example-talk/"
+    "@id": "https://superyou.github.io/publication/tpshare/"
   },
-  "name": "Example Talk",
+  "headline": "Tpshare: a time-space sharing scheduling abstraction for shared cloud via vertical labels",
   
-  "location": {
-    "@type": "Place",
-    "name": "Wowchemy HQ",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "450 Serra Mall",
-      "addressLocality": "Stanford",
-      "postalCode": "94305",
-      "addressRegion": "CA",
-      "addressCountry": "United States"
-    }
-    
-  },
+  "datePublished": "2022-08-26T14:49:46-07:00",
+  "dateModified": "2019-06-22T00:00:00Z",
   
-  
-  "image": [
-    "https://superyou.github.io/talk/example-talk/featured.jpg"
-  ],
-  
-  "startDate": "2030-06-01T13:00:00Z",
-  
-  "endDate": "2030-06-01T15:00:00Z",
-  
-  
-  "performer": {
+  "author": {
     "@type": "Person",
-    "name": "You Wu"
+    "name": "Yuzhao Wang"
   },
   
-  "description": "An example talk using Wowchemy's Markdown slides feature."
+  "publisher": {
+    "@type": "Organization",
+    "name": "You Wu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://superyou.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Current shared cloud operating systems (cloud OS) such as Mesos and YARN are based on the “de facto” two-horizontal-layer cloud platform architecture, which decouples cloud application frameworks (e.g., Apache Spark) from the underlying resource management infrastructure. Each layer normally has its own task or resource allocation scheduler, based on either time-sharing or space- sharing. As such, the schedulers in different layers are unavoidably disconnected, - not aware of each other, which highly likely leads to resource (e.g.,CPU) wastes. Moreover, the tail latency may even be harmed due to the performance interference on shared resources. This paper takes the first step to establish the critical missing connection between the horizontal layers. We propose TPShare, a time- space sharing scheduling abstraction, using a simple but efficient vertical label mechanism to coordinate the time- or space-sharing schedulers in different layers. The vertical labels are bidirectional (i.e., up and down) message carriers which convey necessary information across two layers and are kept as small as possible. The schedulers in different layers can thus take actions according to the label messages to reduce resource wastes and improve tail latency. Moreover, the labels can be defined to support different cloud application frameworks. We implement the label mechanism in Mesos and two popular cloud application frameworks (Apache Spark and Flink) to study the effectiveness of the time-space sharing scheduling abstraction. The label messages of TPShare reduce resource waste and performance interference due to independent time-sharing or space- sharing scheduling of different layers by enabling 1) on-demand fine-grained resource offering, 2) load-aware resource filtering, and 3) resource demand scaling with global view, eventually improving performance and tail latency. We co-locate 13 Spark batch and 4 Flink latency-sensitive programs on a 8-node cluster managed by TPShare to evaluate the speedup, CPU and memory utilization, and tail latency. The results show that TPShare accelerates the Spark programs significantly with even lower CPU and memory utilization compared to Mesos. With higher resource utilization, the throughput of TPShare is drastically larger than that of Mesos. For the Flink programs, TPShare improves the 99th tail latency by 48% on average and up to 120%."
 }
 </script>
 
@@ -379,8 +370,10 @@
 
   
 
+  
 
-  <title>Example Talk | You Wu</title>
+
+  <title>Tpshare: a time-space sharing scheduling abstraction for shared cloud via vertical labels | You Wu</title>
 
   
   
@@ -400,7 +393,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a8edef490afe42206247b6ac05657af0" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c22c0dfe1449d7531185e687e74cc416" >
 
   
   
@@ -736,7 +729,16 @@
     
     
 
-    <div class="pub">
+    
+
+
+
+
+
+
+
+
+<div class="pub">
 
   
 
@@ -751,32 +753,48 @@
 
 
 
-
-
-
-
-
-
-
-
+  
 
   
   
-
-
+  
 <div class="article-container pt-3">
-  <h1>Example Talk</h1>
+  <h1>Tpshare: a time-space sharing scheduling abstraction for shared cloud via vertical labels</h1>
 
   
 
   
+    
 
 
 <div class="article-metadata">
 
   
   
+  
+  
+  <div>
+    
 
+  <span >
+      Yuzhao Wang</span>, <span >
+      Lele Li</span>, <span class="author-highlighted">
+      You Wu</span>, <span >
+      Junqing Yu</span>, <span >
+      Zhibin Yu</span>, <span >
+      Xuehai Qian</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    June, 2019
+  </span>
   
 
   
@@ -793,7 +811,7 @@
 
 </div>
 
-  
+    
 
 
 
@@ -810,60 +828,40 @@
 
 
   
-
-
-
-
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header" href="/project/example/">
-    Project
-  </a>
-  
-
-
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header" href="/slides/example/" target="_blank">
-    Slides
-  </a>
-  
-
-
-
-
-
-  
-  
-  
     
   
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="https://twitter.com/georgecushen" target="_blank" rel="noopener">
-    <i class="fab fa-twitter mr-1"></i>Follow</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8980319" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
+        data-filename="/publication/tpshare/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </div>
 
 
-</div>
-
-
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 514px;">
-  <div style="position: relative">
-    <img src="/talk/example-talk/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_620088_720x2500_fit_q75_h2_lanczos.webp" width="720" height="514" alt="" class="featured-image">
-    <span class="article-header-caption">Image credit: <a href="https://unsplash.com/photos/bzdhc5b3Bxs" target="_blank" rel="noopener"><strong>Unsplash</strong></a></span>
-  </div>
+  
 </div>
 
 
@@ -871,33 +869,20 @@
   <div class="article-container">
 
     
-      <h3>Abstract</h3>
-      <p class="pub-abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam.</p>
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Current shared cloud operating systems (cloud OS) such as Mesos and YARN are based on the “de facto” two-horizontal-layer cloud platform architecture, which decouples cloud application frameworks (e.g., Apache Spark) from the underlying resource management infrastructure. Each layer normally has its own task or resource allocation scheduler, based on either time-sharing or space- sharing. As such, the schedulers in different layers are unavoidably disconnected, - not aware of each other, which highly likely leads to resource (e.g.,CPU) wastes. Moreover, the tail latency may even be harmed due to the performance interference on shared resources. This paper takes the first step to establish the critical missing connection between the horizontal layers. We propose TPShare, a time- space sharing scheduling abstraction, using a simple but efficient vertical label mechanism to coordinate the time- or space-sharing schedulers in different layers. The vertical labels are bidirectional (i.e., up and down) message carriers which convey necessary information across two layers and are kept as small as possible. The schedulers in different layers can thus take actions according to the label messages to reduce resource wastes and improve tail latency. Moreover, the labels can be defined to support different cloud application frameworks. We implement the label mechanism in Mesos and two popular cloud application frameworks (Apache Spark and Flink) to study the effectiveness of the time-space sharing scheduling abstraction. The label messages of TPShare reduce resource waste and performance interference due to independent time-sharing or space- sharing scheduling of different layers by enabling 1) on-demand fine-grained resource offering, 2) load-aware resource filtering, and 3) resource demand scaling with global view, eventually improving performance and tail latency. We co-locate 13 Spark batch and 4 Flink latency-sensitive programs on a 8-node cluster managed by TPShare to evaluate the speedup, CPU and memory utilization, and tail latency. The results show that TPShare accelerates the Spark programs significantly with even lower CPU and memory utilization compared to Mesos. With higher resource utilization, the throughput of TPShare is drastically larger than that of Mesos. For the Flink programs, TPShare improves the 99th tail latency by 48% on average and up to 120%.</p>
     
 
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Date</div>
-          <div class="col-12 col-md-9">
-            Jun 1, 2030 1:00 PM &mdash; 3:00 PM
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-
+    
     
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Event</div>
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            <a href="https://example.org" target="_blank" rel="noopener">
-            Wowchemy Conference
+            <a href="/publication/#1">
+              Conference paper
             </a>
           </div>
         </div>
@@ -912,12 +897,8 @@
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Location</div>
-          <div class="col-12 col-md-9">Wowchemy HQ</div>
-          
-            <div class="col-md-3"></div>
-            <div class="col-12 col-md-9">450 Serra Mall, Stanford, CA 94305</div>
-          
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9"><em>2019 ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -927,21 +908,7 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style">
-      <div class="alert alert-note">
-  <div>
-    Click on the <strong>Slides</strong> button above to view the built-in slides feature.
-  </div>
-</div>
-<p>Slides can be added in a few ways:</p>
-<ul>
-<li><strong>Create</strong> slides using Wowchemy&rsquo;s <a href="https://wowchemy.com/docs/managing-content/#create-slides" target="_blank" rel="noopener"><em>Slides</em></a> feature and link using <code>slides</code> parameter in the front matter of the talk file</li>
-<li><strong>Upload</strong> an existing slide deck to <code>static/</code> and link using <code>url_slides</code> parameter in the front matter of the talk file</li>
-<li><strong>Embed</strong> your slides (e.g. Google Slides) or presentation video on this page using <a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">shortcodes</a>.</li>
-</ul>
-<p>Further event details, including <a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements</a> such as image galleries, can be added to the body of this page.</p>
-
-    </div>
+    <div class="article-style"></div>
 
     
 
@@ -962,7 +929,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://superyou.github.io/talk/example-talk/&amp;text=Example%20Talk" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://superyou.github.io/publication/tpshare/&amp;text=Tpshare:%20a%20time-space%20sharing%20scheduling%20abstraction%20for%20shared%20cloud%20via%20vertical%20labels" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -975,7 +942,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://superyou.github.io/talk/example-talk/&amp;t=Example%20Talk" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://superyou.github.io/publication/tpshare/&amp;t=Tpshare:%20a%20time-space%20sharing%20scheduling%20abstraction%20for%20shared%20cloud%20via%20vertical%20labels" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -988,7 +955,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Example%20Talk&amp;body=https://superyou.github.io/talk/example-talk/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Tpshare:%20a%20time-space%20sharing%20scheduling%20abstraction%20for%20shared%20cloud%20via%20vertical%20labels&amp;body=https://superyou.github.io/publication/tpshare/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1001,7 +968,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://superyou.github.io/talk/example-talk/&amp;title=Example%20Talk" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https://superyou.github.io/publication/tpshare/&amp;title=Tpshare:%20a%20time-space%20sharing%20scheduling%20abstraction%20for%20shared%20cloud%20via%20vertical%20labels" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1014,7 +981,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Example%20Talk%20https://superyou.github.io/talk/example-talk/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Tpshare:%20a%20time-space%20sharing%20scheduling%20abstraction%20for%20shared%20cloud%20via%20vertical%20labels%20https://superyou.github.io/publication/tpshare/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1027,7 +994,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://superyou.github.io/talk/example-talk/&amp;title=Example%20Talk" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://superyou.github.io/publication/tpshare/&amp;title=Tpshare:%20a%20time-space%20sharing%20scheduling%20abstraction%20for%20shared%20cloud%20via%20vertical%20labels" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1047,6 +1014,19 @@
 
   
   
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
 
 
 
@@ -1175,6 +1155,25 @@
   </div>
 
 
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
 
 
 

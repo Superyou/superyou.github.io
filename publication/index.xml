@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Academic</title>
+    <title>Publications | You Wu</title>
     <link>https://superyou.github.io/publication/</link>
       <atom:link href="https://superyou.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 26 Aug 2022 15:03:30 -0700</lastBuildDate>
     <image>
       <url>https://superyou.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -13,22 +13,27 @@
     </image>
     
     <item>
-      <title>An example conference paper</title>
-      <link>https://superyou.github.io/publication/example/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://superyou.github.io/publication/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>RCP: A Low-overhead Reversible Coherence Protocol</title>
+      <link>https://superyou.github.io/publication/rcp/</link>
+      <pubDate>Fri, 26 Aug 2022 15:03:30 -0700</pubDate>
+      <guid>https://superyou.github.io/publication/rcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>REBNN: in-situ acceleration of binarized neural networks in ReRAM using complementary resistive cell</title>
+      <link>https://superyou.github.io/publication/rebnn/</link>
+      <pubDate>Wed, 23 Oct 2019 15:03:23 -0700</pubDate>
+      <guid>https://superyou.github.io/publication/rebnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tpshare: a time-space sharing scheduling abstraction for shared cloud via vertical labels</title>
+      <link>https://superyou.github.io/publication/tpshare/</link>
+      <pubDate>Sat, 22 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://superyou.github.io/publication/tpshare/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic</title>
+    <title>You Wu</title>
     <link>https://superyou.github.io/</link>
       <atom:link href="https://superyou.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Academic</description>
+    <description>You Wu</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
       <url>https://superyou.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>Academic</title>
+      <title>You Wu</title>
       <link>https://superyou.github.io/</link>
     </image>
     
@@ -33,12 +33,36 @@
     </item>
     
     <item>
+      <title>RCP: A Low-overhead Reversible Coherence Protocol</title>
+      <link>https://superyou.github.io/publication/rcp/</link>
+      <pubDate>Fri, 26 Aug 2022 15:03:30 -0700</pubDate>
+      <guid>https://superyou.github.io/publication/rcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>First day of publishing my homepage!</title>
       <link>https://superyou.github.io/post/getting-started/</link>
       <pubDate>Fri, 26 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://superyou.github.io/post/getting-started/</guid>
       <description>&lt;p&gt;Welcome to You Wu&amp;rsquo;s homepage! Enjoy!&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>REBNN: in-situ acceleration of binarized neural networks in ReRAM using complementary resistive cell</title>
+      <link>https://superyou.github.io/publication/rebnn/</link>
+      <pubDate>Wed, 23 Oct 2019 15:03:23 -0700</pubDate>
+      <guid>https://superyou.github.io/publication/rebnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tpshare: a time-space sharing scheduling abstraction for shared cloud via vertical labels</title>
+      <link>https://superyou.github.io/publication/tpshare/</link>
+      <pubDate>Sat, 22 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://superyou.github.io/publication/tpshare/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -176,25 +200,6 @@ $$&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
 &lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example conference paper</title>
-      <link>https://superyou.github.io/publication/example/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://superyou.github.io/publication/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

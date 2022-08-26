@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3 | You Wu</title>
+    <link>https://superyou.github.io/publication-type/3/</link>
+      <atom:link href="https://superyou.github.io/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
+    <description>3</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 26 Aug 2022 15:03:30 -0700</lastBuildDate>
+    <image>
+      <url>https://superyou.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>3</title>
+      <link>https://superyou.github.io/publication-type/3/</link>
+    </image>
+    
+    <item>
+      <title>RCP: A Low-overhead Reversible Coherence Protocol</title>
+      <link>https://superyou.github.io/publication/rcp/</link>
+      <pubDate>Fri, 26 Aug 2022 15:03:30 -0700</pubDate>
+      <guid>https://superyou.github.io/publication/rcp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
